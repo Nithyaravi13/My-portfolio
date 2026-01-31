@@ -2149,6 +2149,73 @@ button:disabled {
     background: var(--primary-dark);
     transform: scale(1.05);
 }
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* Move widget to right bottom */
+    .chatbot-widget {
+        bottom: 1rem;
+        left: auto;
+        right: 1rem;
+    }
+
+    /* Smaller toggle button */
+    .chatbot-toggle {
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
+    }
+
+    /* Chat container full width */
+    .chatbot-container {
+        width: 95vw;              /* Almost full screen */
+        max-height: 80vh;         /* Fit mobile screen */
+        left: auto;
+        right: 0;
+        bottom: 70px;
+        border-radius: 16px;
+    }
+
+    /* Messages area height fix */
+    .chatbot-messages {
+        max-height: 55vh;
+        padding: 0.8rem;
+    }
+
+    /* Header */
+    .chatbot-header {
+        padding: 0.8rem;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .chatbot-header h4 {
+        font-size: 1rem;
+    }
+
+    /* Input area */
+    .chatbot-input {
+        padding: 0.7rem;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .chatbot-input input {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
+
+    .chatbot-input button {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    /* Messages width fix */
+    .bot-message,
+    .user-message {
+        max-width: 90%;
+        font-size: 0.85rem;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
